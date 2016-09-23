@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "start2": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "tsc && npm run tsc && npm run lite",
     "lite": "lite-server -c bs-config.json",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
